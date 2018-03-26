@@ -1,5 +1,8 @@
 'use strict';
 
+var suits = ['Hearts', 'Clubs', 'Diamonds', 'Spades'];
+var values = ['As', 'King', 'Queen', 'Jack', 'Ten', 'Nine', 'Eight', 'Seven', 'Six', 'Five', 'Four', 'Three', 'Two'];
+
 function getNextCard() {
     return deck.shift();
 }

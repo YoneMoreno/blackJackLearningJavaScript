@@ -3,6 +3,7 @@
     <properties>
       <sourceFilesUrls>
         <item url="file://$PROJECT_DIR$/dist/card.js" />
+        <item url="file://$PROJECT_DIR$/dist/buttonLogic.js" />
         <item url="file://$PROJECT_DIR$/dist/showStatus.js" />
         <item url="file://$PROJECT_DIR$/dist/script.js" />
         <item url="file://$PROJECT_DIR$/dist/endOfGame.js" />
@@ -14,6 +15,7 @@
     </properties>
     <CLASSES>
       <root url="file://$PROJECT_DIR$/dist/card.js" />
+      <root url="file://$PROJECT_DIR$/dist/buttonLogic.js" />
       <root url="file://$PROJECT_DIR$/dist/showStatus.js" />
       <root url="file://$PROJECT_DIR$/dist/script.js" />
       <root url="file://$PROJECT_DIR$/dist/endOfGame.js" />

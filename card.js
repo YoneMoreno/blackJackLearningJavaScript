@@ -1,3 +1,9 @@
+let suits = ['Hearts', 'Clubs', 'Diamonds', 'Spades'];
+let values = ['As', 'King', 'Queen', 'Jack',
+    'Ten', 'Nine', 'Eight', 'Seven', 'Six',
+    'Five', 'Four', 'Three', 'Two'
+];
+
  function getNextCard() {
     return deck.shift();
 }
