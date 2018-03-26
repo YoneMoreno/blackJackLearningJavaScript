@@ -5,6 +5,7 @@
         <item url="file://$PROJECT_DIR$/dist/card.js" />
         <item url="file://$PROJECT_DIR$/dist/script.js" />
         <item url="file://$PROJECT_DIR$/dist/Deck.js" />
+        <item url="file://$PROJECT_DIR$/dist/score.js" />
         <item url="file://$PROJECT_DIR$/dist/dist/Deck.js" />
       </sourceFilesUrls>
     </properties>
@@ -12,6 +13,7 @@
       <root url="file://$PROJECT_DIR$/dist/card.js" />
       <root url="file://$PROJECT_DIR$/dist/script.js" />
       <root url="file://$PROJECT_DIR$/dist/Deck.js" />
+      <root url="file://$PROJECT_DIR$/dist/score.js" />
       <root url="file://$PROJECT_DIR$/dist/dist/Deck.js" />
     </CLASSES>
     <SOURCES />
