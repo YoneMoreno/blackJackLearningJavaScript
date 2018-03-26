@@ -2,6 +2,7 @@
   <library name="Generated files" type="javaScript">
     <properties>
       <sourceFilesUrls>
+        <item url="file://$PROJECT_DIR$/dist/initVariables.js" />
         <item url="file://$PROJECT_DIR$/dist/card.js" />
         <item url="file://$PROJECT_DIR$/dist/buttonLogic.js" />
         <item url="file://$PROJECT_DIR$/dist/showStatus.js" />
@@ -14,6 +15,7 @@
       </sourceFilesUrls>
     </properties>
     <CLASSES>
+      <root url="file://$PROJECT_DIR$/dist/initVariables.js" />
       <root url="file://$PROJECT_DIR$/dist/card.js" />
       <root url="file://$PROJECT_DIR$/dist/buttonLogic.js" />
       <root url="file://$PROJECT_DIR$/dist/showStatus.js" />
