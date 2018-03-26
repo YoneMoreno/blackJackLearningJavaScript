@@ -1,26 +1,25 @@
-class Deck{
-    createDeck() {
-        let deck = [];
-        for (let suitIndex = 0; suitIndex < suits.length; suitIndex++) {
-            for (let valueIndex = 0; valueIndex < values.length; valueIndex++) {
-                let card = {
-                    suit: suits[suitIndex],
-                    value: values[valueIndex]
-                };
-                deck.push(card);
-            }
-        }
-        this.deck = deck;
-        return deck;
-    }
+"use strict";
 
-    shuffleDeck() {
-        for (let i = 0; i < deck.length; i++) {
-            let swapIndex = Math.trunc(Math.random() * deck.length);
-            let randomCard = deck[swapIndex];
-            let currentCard = deck[i];
-            deck[swapIndex] = currentCard;
-            deck[i] = randomCard;
+function createDeck() {
+    var deck = [];
+    for (var suitIndex = 0; suitIndex < suits.length; suitIndex++) {
+        for (var valueIndex = 0; valueIndex < values.length; valueIndex++) {
+            var card = {
+                suit: suits[suitIndex],
+                value: values[valueIndex]
+            };
+            deck.push(card);
         }
+    }
+    return deck;
+}
+
+function shuffleDeck(deck) {
+    for (var i = 0; i < deck.length; i++) {
+        var swapIndex = Math.trunc(Math.random() * deck.length);
+        var randomCard = deck[swapIndex];
+        deck[swapIndex] = deck[i];
+        deck[i] = randomCard;
     }
 }
+//# sourceMappingURL=deck.js.map

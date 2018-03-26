@@ -75,20 +75,6 @@ function checkForEndOfGame() {
 var suits = ['Hearts', 'Clubs', 'Diamonds', 'Spades'];
 var values = ['As', 'King', 'Queen', 'Jack', 'Ten', 'Nine', 'Eight', 'Seven', 'Six', 'Five', 'Four', 'Three', 'Two'];
 
-function createDeck() {
-    var deck = [];
-    for (var suitIndex = 0; suitIndex < suits.length; suitIndex++) {
-        for (var valueIndex = 0; valueIndex < values.length; valueIndex++) {
-            var card = {
-                suit: suits[suitIndex],
-                value: values[valueIndex]
-            };
-            deck.push(card);
-        }
-    }
-    return deck;
-}
-
 function updateScores() {
     dealerScore = getScore(dealerCards);
     playerScore = getScore(playerCards);
@@ -138,15 +124,6 @@ function showStatus() {
         newGameButton.style.display = 'inline';
         hitButton.style.display = 'none';
         stayButton.style.display = 'none';
-    }
-}
-
-function shuffleDeck(deck) {
-    for (var i = 0; i < deck.length; i++) {
-        var swapIndex = Math.trunc(Math.random() * deck.length);
-        var randomCard = deck[swapIndex];
-        deck[swapIndex] = deck[i];
-        deck[i] = randomCard;
     }
 }
 //# sourceMappingURL=script.js.map
