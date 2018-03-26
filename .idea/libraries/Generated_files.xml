@@ -2,11 +2,13 @@
   <library name="Generated files" type="javaScript">
     <properties>
       <sourceFilesUrls>
+        <item url="file://$PROJECT_DIR$/dist/card.js" />
         <item url="file://$PROJECT_DIR$/dist/script.js" />
         <item url="file://$PROJECT_DIR$/dist/dist/Deck.js" />
       </sourceFilesUrls>
     </properties>
     <CLASSES>
+      <root url="file://$PROJECT_DIR$/dist/card.js" />
       <root url="file://$PROJECT_DIR$/dist/script.js" />
       <root url="file://$PROJECT_DIR$/dist/dist/Deck.js" />
     </CLASSES>
