@@ -42,13 +42,13 @@ hitButton.addEventListener('click', function(){
     playerCards.push(getNextCard());
     checkForEndOfGame();
     showStatus();
-})
+});
 
 stayButton.addEventListener('click', function(){
     gameOver = true;
     checkForEndOfGame();
     showStatus();
-})
+});
 
 function checkForEndOfGame(){
 
@@ -72,11 +72,7 @@ function checkForEndOfGame(){
         gameOver = true;
     }else if  (gameOver){
 
-        if(playerScore > dealerScore){
-            playerWon = true;
-        }else{
-            playerWon = false;
-        }
+        playerWon = playerScore > dealerScore;
     }
 }
 
@@ -84,13 +80,13 @@ let suits = ['Hearts', 'Clubs', 'Diamonds', 'Spades'];
 let values = ['As', 'King', 'Queen', 'Jack',
     'Ten', 'Nine', 'Eight', 'Seven', 'Six',
     'Five', 'Four', 'Three', 'Two'
-]
+];
 
 
 
 function createDeck() {
     let deck = [];
-    for (suitIndex = 0; suitIndex < suits.length; suitIndex++) {
+    for (let suitIndex = 0; suitIndex < suits.length; suitIndex++) {
         for (let valueIndex = 0; valueIndex < values.length; valueIndex++) {
             let card = {
                 suit: suits[suitIndex],
@@ -203,8 +199,7 @@ function shuffleDeck(deck) {
     for (let i = 0; i < deck.length; i++) {
         let swapIndex = Math.trunc(Math.random() * deck.length);
         let randomCard = deck[swapIndex];
-        let currentCard = deck[i];
-        deck[swapIndex] = currentCard;
+        deck[swapIndex] = deck[i];
         deck[i] = randomCard;
     }
 }

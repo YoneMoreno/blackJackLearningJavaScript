@@ -69,11 +69,7 @@ function checkForEndOfGame() {
         gameOver = true;
     } else if (gameOver) {
 
-        if (playerScore > dealerScore) {
-            playerWon = true;
-        } else {
-            playerWon = false;
-        }
+        playerWon = playerScore > dealerScore;
     }
 }
 
@@ -82,7 +78,7 @@ var values = ['As', 'King', 'Queen', 'Jack', 'Ten', 'Nine', 'Eight', 'Seven', 'S
 
 function createDeck() {
     var deck = [];
-    for (suitIndex = 0; suitIndex < suits.length; suitIndex++) {
+    for (var suitIndex = 0; suitIndex < suits.length; suitIndex++) {
         for (var valueIndex = 0; valueIndex < values.length; valueIndex++) {
             var card = {
                 suit: suits[suitIndex],
@@ -183,8 +179,7 @@ function shuffleDeck(deck) {
     for (var i = 0; i < deck.length; i++) {
         var swapIndex = Math.trunc(Math.random() * deck.length);
         var randomCard = deck[swapIndex];
-        var currentCard = deck[i];
-        deck[swapIndex] = currentCard;
+        deck[swapIndex] = deck[i];
         deck[i] = randomCard;
     }
 }
