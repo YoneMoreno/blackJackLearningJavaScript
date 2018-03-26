@@ -3,7 +3,9 @@
     <properties>
       <sourceFilesUrls>
         <item url="file://$PROJECT_DIR$/dist/card.js" />
+        <item url="file://$PROJECT_DIR$/dist/showStatus.js" />
         <item url="file://$PROJECT_DIR$/dist/script.js" />
+        <item url="file://$PROJECT_DIR$/dist/endOfGame.js" />
         <item url="file://$PROJECT_DIR$/dist/gameStatus.js" />
         <item url="file://$PROJECT_DIR$/dist/Deck.js" />
         <item url="file://$PROJECT_DIR$/dist/score.js" />
@@ -12,7 +14,9 @@
     </properties>
     <CLASSES>
       <root url="file://$PROJECT_DIR$/dist/card.js" />
+      <root url="file://$PROJECT_DIR$/dist/showStatus.js" />
       <root url="file://$PROJECT_DIR$/dist/script.js" />
+      <root url="file://$PROJECT_DIR$/dist/endOfGame.js" />
       <root url="file://$PROJECT_DIR$/dist/gameStatus.js" />
       <root url="file://$PROJECT_DIR$/dist/Deck.js" />
       <root url="file://$PROJECT_DIR$/dist/score.js" />
